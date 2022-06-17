@@ -5,11 +5,16 @@ import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
-  return (
+  
+  return <div>
+    <Head>
+      <title>Home</title>
+    </Head>
+    <div className='text-xl text-center' >start</div>
     <div>
-      <h1>central</h1>
+      
     </div>
-  )
+  </div>
 }
 
 export default Home
