@@ -1,6 +1,8 @@
 import * as Accordion from '@radix-ui/react-accordion'
 import AccordionDemo from './radix/Acordion'
 import DropdownMenuItemComponent from './radix/drop-down'
+import MainSpring from './Spring/MainSpring'
+import Water from './Spring/WaterAnimate'
 const Mein = () => {
   return (
     <div className='relative'>
@@ -15,7 +17,22 @@ const Mein = () => {
         </div>
         {/* // spring */}
         <div>
-          <h2 className='text-2xl text-center mt-2'>spring</h2>
+          <h2 className='text-2xl text-center mt-2'>Spring</h2>
+          <div className='grid mb-[350px] grid-cols-3 justify-center '>
+            <div className='relative 00'>
+              <MainSpring />
+            </div>
+            <div className='relative'>
+              <MainSpring />
+            </div>
+            <div className='relative'>
+              <MainSpring />
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 className='text-2xl text-center mt-2'>water</h2>
+          <Water />
         </div>
       </section>
     </div>
