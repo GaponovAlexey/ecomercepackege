@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import Mein from '../components/Mein'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -10,10 +11,7 @@ const Home: NextPage = () => {
     <Head>
       <title>Home</title>
     </Head>
-    <div className='text-xl text-center' >start</div>
-    <div>
-      
-    </div>
+    <Mein />
   </div>
 }
 
