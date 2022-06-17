@@ -11,7 +11,9 @@ const Layout = ({ children }: any) => {
           </div>
         </div>
       </header>
-      <main className='min-h-screen'>{children}</main>
+      <main className='min-h-screen m-[2%_5%] grid grid-cols-tem'>
+        {children}
+      </main>
       <footer className='p-2 text-center bg-slate-400'>footer</footer>
     </div>
   )
