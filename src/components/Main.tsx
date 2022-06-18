@@ -3,13 +3,13 @@ import AccordionDemo from './radix/Acordion'
 import DropdownMenuItemComponent from './radix/drop-down'
 import MainSpring from './Spring/MainSpring'
 import Water from './Spring/WaterAnimate'
-import * as EmailValidator from 'email-validator';
- 
+import Cookies from 'js-cookie'
 
 const Mein = () => {
-  const validator = EmailValidator.validate("test@email.com");
-  console.log(validator)
-  
+  if (typeof window !== 'undefined')
+    document.cookie =
+      'my2name=my2value; expires=' + new Date(2024, 0, 1).toUTCString()
+
   return (
     <div className='relative'>
       {/* water */}
