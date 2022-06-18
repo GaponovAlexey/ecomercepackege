@@ -3,7 +3,6 @@ import AccordionDemo from './radix/Acordion'
 import DropdownMenuItemComponent from './radix/drop-down'
 import MainSpring from './Spring/MainSpring'
 import Water from './Spring/WaterAnimate'
-import Cookies from 'js-cookie'
 
 const Mein = () => {
   if (typeof window !== 'undefined')

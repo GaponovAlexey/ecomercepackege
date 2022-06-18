@@ -1,12 +1,16 @@
 import '../../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Layout from '../components/layout/layout'
+import { SWRConfig } from 'swr'
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const fetcher = (url: string) => fetch(url).then((r) => r.json())
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <SWRConfig value={{ fetcher }}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </SWRConfig>
   )
 }
 

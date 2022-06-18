@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Layout = ({ children }: any) => {
   return (
     <div>
@@ -5,8 +7,12 @@ const Layout = ({ children }: any) => {
         <div className='grid grid-cols-2 px-2 bg-slate-400'>
           <h1>ICO</h1>
           <div className='flex justify-between  '>
-            <button>test1</button>
-            <button>test2</button>
+            <button>
+              <Link href='/'>test1</Link>
+            </button>
+            <button>
+              <Link href='/swr'>test2</Link>
+            </button>
             <button>test3</button>
           </div>
         </div>
