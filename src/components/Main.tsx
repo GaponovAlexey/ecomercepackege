@@ -1,4 +1,5 @@
 import * as Accordion from '@radix-ui/react-accordion'
+import Slider from './keenSlider/Slider'
 import AccordionDemo from './radix/Acordion'
 import DropdownMenuItemComponent from './radix/drop-down'
 import MainSpring from './Spring/MainSpring'
@@ -42,6 +43,9 @@ const Mein = () => {
               <MainSpring />
             </div>
           </div>
+        </div>
+        <div>
+          <Slider />
         </div>
       </section>
     </div>

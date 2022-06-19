@@ -1,6 +1,8 @@
+import { useTheme } from 'next-themes'
 import Link from 'next/link'
 
 const Layout = ({ children }: any) => {
+  const { theme, setTheme } = useTheme()
   return (
     <div>
       <header>
@@ -20,7 +22,13 @@ const Layout = ({ children }: any) => {
       <main className='min-h-screen m-[2%_5%] grid grid-cols-tem'>
         {children}
       </main>
-      <footer className='p-2 text-center bg-slate-400'>footer</footer>
+      <footer className='p-2 text-center bg-slate-400'>
+        footer
+        <div>
+          <button onClick={() => setTheme('light')}>Light Mode</button>
+        </div>
+        <button onClick={() => setTheme('dark')}>Dark Mode</button>
+      </footer>
     </div>
   )
 }

@@ -7,3 +7,13 @@ body {
   font-family: Coda, sans-serif;
 }
 
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --foreground: white;
+}
