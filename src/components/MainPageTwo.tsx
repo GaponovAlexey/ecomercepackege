@@ -5,6 +5,7 @@ import Copy from './CopyBlock/Copy'
 import HoverEfect from './CssCard/HoverEfect'
 import PhotoGaleray from './CssCard/PhotoGaleray'
 import { Example } from './Hooks'
+import BoxThreeJs from './TestThreeJs/BoxThreejs'
 const MainPageTwo = () => {
   const { theme, setTheme } = useTheme()
   const [ref, bounds] = useMeasure()
@@ -45,6 +46,7 @@ const MainPageTwo = () => {
       <div>
       </div>
         <Copy />
+        <BoxThreeJs />
     </div>
   )
 }
