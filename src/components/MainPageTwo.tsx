@@ -1,6 +1,7 @@
 import { useTheme } from 'next-themes'
 import Marquee from 'react-fast-marquee'
 import useMeasure from 'react-use-measure'
+import Copy from './CopyBlock/Copy'
 import HoverEfect from './CssCard/HoverEfect'
 import PhotoGaleray from './CssCard/PhotoGaleray'
 import { Example } from './Hooks'
@@ -41,7 +42,9 @@ const MainPageTwo = () => {
         <HoverEfect />
       </div>
       &#128576; &#128030;
-      <div></div>
+      <div>
+      </div>
+        <Copy />
     </div>
   )
 }

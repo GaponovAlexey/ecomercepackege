@@ -11,7 +11,7 @@ const SWR = () => {
   return (
     <>
       <Head>
-        <title>SWR</title>
+        <title>two</title>
       </Head>
       <div>
         <div>{data && data.name}</div>

@@ -8,7 +8,8 @@ export default function Document() {
           href='https://fonts.googleapis.com/css?family=Coda:regular,800'
           rel='stylesheet'
         />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
+        <link rel='icon' href='/favicon.ico' type='image/x-icon' />
       </Head>
       <body>
         <Main />
