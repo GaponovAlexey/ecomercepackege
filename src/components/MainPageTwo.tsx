@@ -41,9 +41,7 @@ const MainPageTwo = () => {
         <HoverEfect />
       </div>
       &#128576; &#128030;
-      <div>
-        <Example />
-      </div>
+      <div></div>
     </div>
   )
 }
