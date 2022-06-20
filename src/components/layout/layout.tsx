@@ -3,19 +3,25 @@ import Link from 'next/link'
 
 const Layout = ({ children }: any) => {
   const { theme, setTheme } = useTheme()
+  const styleButton =
+    ' bg-sky-200 rounded-xl px-4 text-indigo-400  hover:bg-black'
   return (
     <div>
       <header>
         <div className='grid grid-cols-2 px-2 bg-slate-400'>
           <h1>ICO</h1>
           <div className='flex justify-between  '>
-            <button>
+            <button className={styleButton}>
               <Link href='/'>test1</Link>
             </button>
-            <button>
+            <button className={styleButton}>
               <Link href='/swr'>test2</Link>
             </button>
-            <button>test3</button>
+            <button>
+              <button className={styleButton}>
+                <Link href='/'>test3</Link>
+              </button>
+            </button>
           </div>
         </div>
       </header>
