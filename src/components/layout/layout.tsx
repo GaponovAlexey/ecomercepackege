@@ -20,6 +20,9 @@ const Layout = ({ children }: any) => {
             <button className={styleButton}>
               <Link href='/Three'>test3</Link>
             </button>
+            <button className={styleButton}>
+              <Link href='/Four'>test4</Link>
+            </button>
           </div>
         </div>
       </header>
