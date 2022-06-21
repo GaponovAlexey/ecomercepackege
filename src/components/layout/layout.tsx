@@ -18,7 +18,7 @@ const Layout = ({ children }: any) => {
               <Link href='/swr'>test2</Link>
             </button>
             <button className={styleButton}>
-              <Link href='/'>test3</Link>
+              <Link href='/Three'>test3</Link>
             </button>
           </div>
         </div>
