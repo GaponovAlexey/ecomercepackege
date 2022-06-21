@@ -13,7 +13,7 @@ const Three = () => {
             alt='da'
           />
         </Parallax>
-        <Parallax aria-busy='true' speed={+20}>
+        <Parallax speed={+20}>
           <section className='text-gray-600 body-font'>
             <div className=' px-5 py-24 mx-auto'>
               <div className='flex flex-wrap -m-4'>
