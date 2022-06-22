@@ -8,6 +8,7 @@ export function useUser() {
 const SWR = () => {
   const { data } = useUser()
 
+  
   return (
     <>
       <Head>
